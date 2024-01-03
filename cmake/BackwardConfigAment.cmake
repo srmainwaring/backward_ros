@@ -24,5 +24,6 @@ foreach(lib ${backward_ros_forced_LIBRARIES})
         set(backward_ros_full_path_LIBRARIES "${backward_ros_full_path_LIBRARIES} ${lib}")
     endif()
 endforeach()
-SET(CMAKE_EXE_LINKER_FLAGS "-Wl,--no-as-needed ${backward_ros_full_path_LIBRARIES} -Wl,--as-needed ${CMAKE_EXE_LINKER_FLAGS}")
+# SET(CMAKE_EXE_LINKER_FLAGS "-Wl,--no-as-needed ${backward_ros_full_path_LIBRARIES} -Wl,--as-needed ${CMAKE_EXE_LINKER_FLAGS}")
+SET(CMAKE_EXE_LINKER_FLAGS "-Wl, ${backward_ros_full_path_LIBRARIES} -Wl, ${CMAKE_EXE_LINKER_FLAGS}")
 
