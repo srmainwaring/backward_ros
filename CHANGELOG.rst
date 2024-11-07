@@ -2,8 +2,8 @@
 Changelog for package backward_ros
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.6 (2024-11-07)
+------------------
 * Update backward_rosConfig.cmake.in
   adding both OS paths
 * Update backward_rosConfig.cmake.in to windows location
